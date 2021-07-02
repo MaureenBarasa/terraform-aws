@@ -52,3 +52,45 @@ variable "AZ" {
     "eu-west-1b",
   ]
 }
+
+variable "AMI" {
+  description = "the ami image id"
+  type        = string
+  default     = "ami-0f89681a05a3a9de7"
+}
+
+variable "KEY" {
+  description = "the ec2 keypair name"
+  type        = string
+  default     = "maureenaws"
+}
+
+variable "COUNT" {
+  description = "ec2 instances count"
+  type        = number
+  default     = 2
+}
+
+variable "INSTANCE-TYPE" {
+  description = "the ec2 instance type"
+  type        = string
+  default     = "t2.micro"
+}
+
+variable "SG-NAME" {
+  description = "the ec2 instance security group name"
+  type        = string
+  default     = "dev-ec2-sg"
+}
+
+variable "EC2-NAME" {
+  description = "the ec2 instance Name"
+  type        = string
+  default     = "dev-ec2-cluster"
+}
+
+variable "VPC-NAME" {
+  description = "the ec2 instance Name"
+  type        = string
+  default     = "AWS-Practice"
+}
