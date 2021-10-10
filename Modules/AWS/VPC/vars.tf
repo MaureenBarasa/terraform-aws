@@ -94,3 +94,9 @@ variable "VPC-NAME" {
   type        = string
   default     = "AWS-Practice"
 }
+
+variable "Name" {
+  description = "the name of the vpc"
+  type        = string
+  default     = "AWS-Practice"
+}
